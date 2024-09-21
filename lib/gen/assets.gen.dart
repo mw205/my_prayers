@@ -53,12 +53,32 @@ class $AssetsImagesGen {
   List<dynamic> get values => [background, playStore, qiblaWithNeedle];
 }
 
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/adhkar.json
+  String get adhkar => 'assets/json/adhkar.json';
+
+  /// File path: assets/json/allahnames.json
+  String get allahnames => 'assets/json/allahnames.json';
+
+  /// File path: assets/json/quarters.json
+  String get quarters => 'assets/json/quarters.json';
+
+  /// File path: assets/json/surahs.json
+  String get surahs => 'assets/json/surahs.json';
+
+  /// List of all assets
+  List<String> get values => [adhkar, allahnames, quarters, surahs];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsMLmodelGen mLmodel = $AssetsMLmodelGen();
   static const $AssetsAnimationGen animation = $AssetsAnimationGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
 class AssetGenImage {

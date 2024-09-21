@@ -92,6 +92,7 @@ flutter:
     - assets/images/
     - assets/animation/
     - assets/MLmodel/
+    - assets/json/
 
   fonts:
     - family: AmiriQuran
