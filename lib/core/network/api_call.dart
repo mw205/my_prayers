@@ -3,7 +3,7 @@ import 'package:my_prayers/core/network/api_error_handler.dart';
 import 'package:my_prayers/core/network/api_result.dart';
 
 class ApiCallsHandler {
-  Future<ApiResult<T>> handler<T>(
+  static Future<ApiResult<T>> handler<T>(
       {required Future<Response> Function() apiCall,
       required T Function(Map<String, dynamic> data) parser}) async {
     try {
