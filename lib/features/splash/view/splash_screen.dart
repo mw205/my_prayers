@@ -12,17 +12,12 @@ class SplashScreen extends GetView<SplashScreenController> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Transform.scale(
-              scale: 0.5,
-              child: Assets.animation.prayers.lottie(
-                repeat: false,
-                filterQuality: FilterQuality.high,
-              ),
-            )
-          ],
+        child: Transform.scale(
+          scale: 0.5,
+          child: Assets.animation.prayers.lottie(
+            repeat: false,
+            filterQuality: FilterQuality.high,
+          ),
         ),
       ),
     );
