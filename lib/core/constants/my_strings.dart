@@ -1,8 +1,6 @@
 class MyStrings {
   static const String kLangKey = "lang";
-
-  //routes
-  static const String home = "/home";
-  static const String layout = "/layout";
-  static const String qari = "/qari";
+  static const String baseUrl = "https://api.aladhan.com/v1/";
+  static const String calendar = "calendar/";
+  static const String timingsByCity = "timingsByCity/";
 }
